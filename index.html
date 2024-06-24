@@ -15,21 +15,28 @@
 </head>
 <body>
     <header class="header">
-        <nav>
-            <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="Pages/services/service.html">Services</a></li>
-                <li><a href="pages/Gallery.html"> Gallery</a></li>
-                <li><a href="Pages/contact/index.html"> Contact</a></li>
-            </ul>
-        </nav>
-        <h1>
+        <div class="nav-plus">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="Pages/services/service.html">Services</a></li>
+                    <li><a href="Pages/gallery/index.html"> Gallery</a></li>
+                    <li><a href="Pages/contact/index.html"> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="hidden">
             FROM VISION TO REALITY,<br> YOUR DREAM KITCHEN AWAITS.
         </h1>
-        <button class = "myButton">
+        <button class = "myButton hidden">
             Book Appointment
         </button>
-        <button class = "call" >
+        <button class = "call hidden" >
             Contact Us
         </button>
     </header>
@@ -37,13 +44,13 @@
         <div class="about-container">
             <img src="Assets/about.jpg" alt="">
             <div class="about-text">
-                <h1>
+                <h1 class="hidden">
                     ABOUT US
                 </h1>
-                <h2>
+                <h2 class="hidden">
                     Life Kitchen <br> Is the Best
                 </h2>
-                <p>
+                <p class="hidden">
                     Welcome to <strong>Life Kitchen</strong>, where we don't just remodel kitchens; we breathe new life into the heart of your home. With a passion for design innovation and a commitment to quality craftsmanship, <strong>Life Kitchen</strong> is your go-to destination for transformative kitchen renovations. <br> 
                         <br>
                         <!-- <strong>Life Kitchen</strong> was founded with a vision to redefine kitchen spaces and create environments that reflect the essence of life and living. We understand that the kitchen is more than just a room; it's where families gather, memories are created, and stories are shared. Our mission is to enhance these experiences by crafting kitchens that seamlessly blend functionality, style, and comfort.   -->
@@ -54,8 +61,8 @@
         
     </section>
     <section class="services">
-        <h1>What We Offer</h1>
-        <div class="services-container">
+        <h1 class="hidden">What We Offer</h1>
+        <div class="services-container hidden">
             <div class="services-container2">
                 <div class="services-item1"></div>
                 <h1>Kitchen Remodeling</h1>
@@ -78,37 +85,37 @@
 
     </section>
     <section class="process-header">
-        <h1>
+        <h1 class="hidden">
             How we work
         </h1>
-        <h2>
+        <h2 class="hidden">
             4 Easy Steps
         </h2>
     </section>
     <section class="process">
         <div class="process-container">
-            <div class="item-1">
+            <div class="item-1 hidden">
                 <div class="circle"><h1>1</h1></div>
                 <h1>
                     Consultation
                 </h1>
                 <p>Our process will start with an in-home consultation</p>
             </div>
-            <div class="item-1">
+            <div class="item-1 hidden">
                 <div class="circle"><h1>2</h1></div>
                 <h1>
                     Design
                 </h1>
                 <p>Our professional designers will listen to your ideas and combine them with their professional expertise to lay out 3D mockups of your kitchen, bathroom, or closet remodel.</p>
             </div>
-            <div class="item-1">
+            <div class="item-1 hidden">
                 <div class="circle"><h1>3</h1></div>
                 <h1>
                     Installation
                 </h1>
                 <p>Our professional installation team will install countertops, cabinetry/vanity, sinks, and everything else.</p>
             </div>
-            <div class="item-1">
+            <div class="item-1 hidden">
                 <div class="circle"><h1>4</h1></div>
                 <h1>
                     Completion
@@ -118,7 +125,7 @@
         </div>
         
     </section>
-    <!-- <section class="gallery">
+    <section class="gallery">
         <div class = 'gallery-sub'>
             <h1>
                 GALLERY
@@ -154,7 +161,7 @@
         </div>
     </div>
 
-    </section> -->
+    </section>
     <section class="quote">
         <div class="dream-overlay">
             <h1>

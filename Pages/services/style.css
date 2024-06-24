@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(29, 29, 29);
     color: black;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -29,7 +29,7 @@ ul {
     text-align: center;
     padding: 0;
     list-style-type: none;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(29, 29, 29);
 }
 
 li {
@@ -41,7 +41,7 @@ li {
 
 ul a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     position: relative;
 }
 
@@ -179,7 +179,8 @@ header{
 .quote .dream-overlay{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); 
+    /* background-color: rgba(0, 0, 0, 0.4);  */
+    background-color: rgba(218, 165, 32, 0.387);
     display: flex;
     align-items: center;
     flex-direction: column;
