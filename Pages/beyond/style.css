@@ -24,12 +24,17 @@ body {
     height: 60rem;
 }
 
+.nav-plus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
 ul {
     margin: 0;
     text-align: center;
     padding: 0;
     list-style-type: none;
-    background-color: rgb(255, 255, 255);
 }
 
 li {
@@ -45,11 +50,35 @@ ul a {
     position: relative;
 }
 
-ul a:hover{
+ul li a{
+    text-align: center;
+}
+
+nav ul li ul.dropdown li{
+    display: block;
+    margin: 0;
+    padding-top: 10px;
+}
+nav ul li ul.dropdown{
+    width: auto;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    height: 100px;
+    z-index: 999;
+    display: none;
+    transition: all 0.5s;
+}
+nav ul li:hover ul.dropdown{
+    display: block;
+}
+
+nav ul a:hover{
     color: goldenrod;
 }
 
-ul a::after {
+nav ul a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -62,14 +91,39 @@ ul a::after {
     transition: transform 0.3s ease; 
 }
 
-ul a:hover::after {
+nav ul a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-ul li.current a::after {
+nav ul li.current a::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+nav ul a.current::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#menu-toggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    border-radius: 20px;
+    background: #ffffff;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+nav ul {
+    display: flex;
 }
 
 header{
@@ -92,14 +146,57 @@ header{
     font-size: 70px;
 }
 
-.services{
-    height: 900px;
-    background-color: rgb(255, 255, 255);
-    color: goldenrod;
+.kitchen-container{
+    display: flex;
+    flex-direction: row;
+}
+.img{
+    background-image: url(../../Assets/box2.jpg);
+    background-size: cover;
+}
+.kitchen-text{
+    background-color: white;
+}
+.kitchen-item{
+    flex: 1;
+    height: 500px;
+}
+
+.kitchen-gallery{
+    background-color: rgb(29, 29, 29);
+    height: 650px;
     display: flex;
     flex-direction: column;
+}
+
+.kitchen-gallery-container{
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
+    padding-top: 5%;
+    height: 450px;
+}
+.kitchen-gallery-container img{
+    width: 400px;
+}
+.kitchen-gallery button{
+    margin: 20px;
+    background-color: goldenrod;
+    cursor: pointer;
+    border: none;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    transition: all 0.5s;
+}
+
+.kitchen-gallery button:hover{
+    background-color: rgb(255, 255, 255);
+    color: goldenrod; 
 }
 
 .quote{
@@ -220,4 +317,17 @@ header{
 }
 .line{
     border-bottom: 1px solid rgb(97, 97, 97);
+}
+
+@media screen and (max-width: 600px){
+
+}
+@media (min-width: 601px) and (max-width: 899px){
+
+}
+@media (min-width: 900px) and (max-width: 1199px){
+
+}
+@media (min-width: 1200px) and (max-width: 1600px){
+    
 }

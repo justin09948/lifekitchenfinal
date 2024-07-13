@@ -4,17 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../services/service.html">Services</a></li>
-            <li class="current"><a href="../gallery/index.html"> Gallery</a></li>
-            <li><a href="../contact/index.html"> Contact</a></li>
-        </ul>
-    </nav>
-    Gallery
+    <div class="nav-plus">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li>
+                    <a href="../../Pages/services/service.html">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="../../Pages/kitchen/index.html">Kitchen</a></li>
+                        <li><a href="../../Pages/bathroom/index.html">Bathroom</a></li>
+                        <li><a href="../../Pages/beyond/index.html">Beyond The Basics</a></li>
+                    </ul>
+                </li>
+                <li class="current"><a href="../../Pages/gallery/index.html"> Gallery</a></li>
+                <li><a href="../../Pages/contact/index.html"> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="header">
+        <h1>Gallery</h1>
+    </section>
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <img src="../../Assets/about.jpg" alt="">
+            <img src="../../Assets/back.jpg" alt="">
+            <img src="../../Assets/beyondmainpage.jpg" alt="">
+            <img src="../../Assets/box3.jpg" alt="">
+            <img src="../../Assets/box4.jpg" alt="">
+            <img src="../../Assets/contactheader.jpg" alt="">
+            <img src="../../Assets/img3.jpg" alt="">
+        </div>
+        <button>
+            Load More
+        </button>
+    </section>
+    <section class="quote">
+        <div class="dream-overlay">
+            <h1>
+                Life Kitchen Excellence <br>
+                <span class="dream-kitchen">Ready to design your dream kitchen?</span>
+            </h1>
+            <button onclick="window.location.href = 'Pages/contact/index.html'">
+                Get a quote &rarr;
+            </button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class = "business">
+                <h1>
+                    Business Hours
+                </h1>
+                <p>
+                    <span class="hover-footer">Mon-Fri: 8:00 AM - 7:00 PM <br></span>
+                    <span class="hover-footer">Sat: 9:00 AM - 4:00 PM <br></span>
+                    <span class="hover-footer">Sun: 8:00 AM - 12:00 PM <br></span>
+                </p>
+            </div>
+            <div class ="contact">
+                <h1>
+                    Contact Us
+                </h1>
+                <p>
+                    <span class="hover-footer">contact@lifekitcheninc.com <br></span>
+                    <span class="hover-footer">(571)-501-2359<br></span>
+                </p>
+            </div>
+            <div class = "explore">
+                <h1>
+                    Explore
+                </h1>
+                <p>
+                    <span class="hover-footer">Kitchen Cabinets</span> <br>
+                    <span class="hover-footer">Counter Tops</span> <br>
+                    <span class="hover-footer">Bathroom Vanities</span> <br>
+                    <span class="hover-footer">Vanity Tops</span>
+                </p>
+            </div>
+            <div class="estimate">
+                <h1>
+                    Get an Estimate
+                </h1>
+                <p>
+                    Get a free estimate when emailing!
+                </p>
+                <input type="text" placeholder="Email" id="emailInput" name="email">
+            </div>
+        </div>
+        <div class="line"></div>
+        <p class="copyright">&copy; 2024 <span class="life">Life Kitchen</span>. All rights reserved.</p>
+    </footer>
 </body>
 </html>

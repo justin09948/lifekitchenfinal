@@ -23,3 +23,4 @@ const body = document.body;
                 body.classList.remove('no-scroll');
             }
         });
+

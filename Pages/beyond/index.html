@@ -10,21 +10,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li class="current"><a href="../services/service.html">Services</a></li>
-            <li><a href="../gallery/index.html"> Gallery</a></li>
-            <li><a href="../contact/index.html"> Contact</a></li>
-        </ul>
-    </nav>
+    <div class="nav-plus">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li >
+                    <a class="current" href="../../Pages/services/service.html">Services</a>
+                    <ul class="dropdown">
+                        <li ><a href="../../Pages/kitchen/index.html">Kitchen</a></li>
+                        <li><a href="../../Pages/bathroom/index.html">Bathroom</a></li>
+                        <li class="current"><a href="../../Pages/beyond/index.html">Beyond The Basics</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../Pages/gallery/index.html"> Gallery</a></li>
+                <li><a href="../../Pages/contact/index.html"> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <header>
         <div class="service-header">
             <h1>Beyond The Basics</h1>
         </div>
     </header>
     <section class="services">
-        
+        <div class="kitchen-container">
+            <div class="img kitchen-item">img</div>
+            <div class="kitchen-text kitchen-item">
+                <h1>Test</h1>
+                <p>Text</p>
+            </div>
+        </div>
+        <div class="kitchen-container">
+            <div class="kitchen-text kitchen-item">
+                <h1>Test</h1>
+                <p>Text</p>
+            </div>
+            <div class="img kitchen-item">img</div>
+        </div>
+    </section>
+    <section class="kitchen-gallery">
+        <div class="kitchen-gallery-container">
+            <img src="../../Assets/img1.jpg" alt="">
+            <img src="../../Assets/img2.jpg" alt="">
+            <img src="../../Assets/img3.jpg" alt="">
+        </div>
+        <button onclick="window.location.href = '../../Pages/gallery/index.html'">
+            Show More
+        </button>
     </section>
     <section class="quote">
         <div class="dream-overlay">

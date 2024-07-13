@@ -39,28 +39,13 @@ header h1{
     font-size: 4rem;
     font-weight: 500;
 }
-.header{
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    transform-style: preserve-3d;
-}
-.header::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: url("Assets/back.jpg") top left;
-    background-size: cover;
-    transform: translateZ(-3px) scale(5);
-}
-/* .header {
+.header {
     background-color: black;
     background-image: url("Assets/back.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
-} */
+}
 .nav-plus{
     display: flex;
     justify-content: space-between;
@@ -87,11 +72,35 @@ ul a {
     position: relative;
 }
 
-ul a:hover{
+ul li a{
+    text-align: center;
+}
+
+nav ul li ul.dropdown li{
+    display: block;
+    margin: 0;
+    padding-top: 10px;
+}
+nav ul li ul.dropdown{
+    width: auto;
+    text-align: center;
+    background-color: rgb(29, 29, 29);
+    position: absolute;
+    padding: 20px;
+    height: 100px;
+    z-index: 999;
+    display: none;
+    transition: all 0.5s;
+}
+nav ul li:hover ul.dropdown{
+    display: block;
+}
+
+nav ul a:hover{
     color: goldenrod;
 }
 
-ul a::after {
+nav ul a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -104,12 +113,12 @@ ul a::after {
     transition: transform 0.3s ease; 
 }
 
-ul a:hover::after {
+nav ul a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-ul li.current a::after {
+nav ul li.current a::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -534,11 +543,11 @@ nav ul {
     html{
         height: 50vh;
     }
+
     .header{
-        min-height: 50vh;
-    }
-    .header::before{
-        transform: translateZ(-1px) scale(2.2);
+        margin: 0;
+        padding: 0;
+        height: 75vh;
     }
     .header h1{
         font-size: 2rem;
@@ -610,12 +619,12 @@ nav ul {
     }
     .about{
         margin: 0;
-        padding: 0;
+        padding: 1px;
     }
     .about-container{
         flex-direction: column;
         place-items: center;
-        height: 800px;
+        height: 1000px;
         margin: 10%;
     }
     .about-text{
@@ -690,7 +699,6 @@ nav ul {
         height: 200px;
         background-color: rgb(255, 255, 255);
     }
-    
     .process-header h1{
         color: goldenrod;
     }
@@ -1014,7 +1022,6 @@ nav ul {
 }
 
 @media (min-width: 1200px) and (max-width: 1600px){
-    .services{
         .services-item1{
             padding-left: 100px;
             padding-right: 100px;
@@ -1045,5 +1052,4 @@ nav ul {
             background-size: cover;
             height:100%;
         }
-    }
 }
